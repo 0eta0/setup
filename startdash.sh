@@ -39,6 +39,7 @@ curl -L git.io/nodebrew | perl - setup
 nodebrew install stable
 
 # Install gcc
+brew install wget
 cd /usr/local/opt/
 mkdir gcc
 cd gcc
