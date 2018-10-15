@@ -38,6 +38,13 @@ source ~/.bash_profile
 curl -L git.io/nodebrew | perl - setup
 nodebrew install stable
 
+# Install go
+echo 'export GOPATH=$HOME/.go' >> ~/.bash_profile
+echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.bash_profile
+source ~/.bash_profile
+
+brew install go
+
 # Install gcc
 brew install wget
 cd /usr/local/opt/
@@ -48,3 +55,4 @@ tar -xf gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
 rm gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
 cd ../../bin/
 ln -s ../opt/gcc/gcc-arm-none-eabi-7-2018-q2-update
+
