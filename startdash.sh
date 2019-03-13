@@ -16,7 +16,7 @@ brew update
 
 # Install Python using pyenv
 echo '#### Install Python using pyenv ####'
-#sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 
 echo 'export PYENV_ROOT=/usr/local/var/pyenv' >> ~/.bash_profile
 echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bash_profile
@@ -61,16 +61,16 @@ source ~/.bash_profile
 brew install go
 
 # Install gcc
-# echo '#### Install gcc ####'
-# brew install wget
-# cd /usr/local/opt/
-# mkdir -p gcc
-# cd gcc
-# wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/7-2018q2/gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
-# tar -xf gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
-# rm gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
-# cd ../../bin/
-# ln -s ../opt/gcc/gcc-arm-none-eabi-7-2018-q2-update
+echo '#### Install gcc ####'
+brew install wget
+cd /usr/local/opt/
+mkdir -p gcc
+cd gcc
+wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/7-2018q2/gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
+tar -xf gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
+rm gcc-arm-none-eabi-7-2018-q2-update-mac.tar.bz2
+cd ../../bin/
+ln -s ../opt/gcc/gcc-arm-none-eabi-7-2018-q2-update
 
 # Create .bashrc
 echo '#### Create .bashrc ####'
