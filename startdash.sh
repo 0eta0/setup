@@ -13,14 +13,17 @@ xcode-select --install
 /usr/bin/ruby -e $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 brew update
 
+# Update git
+brew install git
+
 # Install Python using pyenv
 echo '#### Install Python using pyenv ####'
-echo '' >> ~/.zshenv
-echo '# PYENV' >> ~/.zshenv
-echo 'export PYENV_ROOT=/usr/local/var/pyenv' >> ~/.zshenv
-echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.zshenv
-echo '' >> ~/.zshenv
-source ~/.zshenv
+echo '' >> ~/.zprofile
+echo '# PYENV' >> ~/.zprofile
+echo 'export PYENV_ROOT=/usr/local/var/pyenv' >> ~/.zprofile
+echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.zprofile
+echo '' >> ~/.zprofile
+source ~/.zprofile
 
 brew install pyenv
 
@@ -43,23 +46,23 @@ pyenv global ${array[$num]}
 
 # Install nodejs and npm using nodebrew
 echo '#### Install nodejs and npm using nodebrew ####'
-echo '' >> ~/.zshenv
-echo '# NODEBREW' >> ~/.zshenv
-echo 'export NODEBREW_ROOT=/usr/local/var/nodebrew' >> ~/.zshenv
-echo 'export PATH=$NODEBREW_ROOT/current/bin:$PATH' >> ~/.zshenv
-echo '' >> ~/.zshenv
-source ~/.zshenv
+echo '' >> ~/.zprofile
+echo '# NODEBREW' >> ~/.zprofile
+echo 'export NODEBREW_ROOT=/usr/local/var/nodebrew' >> ~/.zprofile
+echo 'export PATH=$NODEBREW_ROOT/current/bin:$PATH' >> ~/.zprofile
+echo '' >> ~/.zprofile
+source ~/.zprofile
 
 curl -L git.io/nodebrew | perl - setup
 nodebrew install stable
 
 # Install go
 echo '#### Install go ####'
-echo '' >> ~/.zshenv
-echo '# GO' >> ~/.zshenv
-echo 'export GOPATH=$HOME/.go' >> ~/.zshenv
-echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.zshenv
-echo '' >> ~/.zshenv
-source ~/.zshenv
+echo '' >> ~/.zprofile
+echo '# GO' >> ~/.zprofile
+echo 'export GOPATH=$HOME/.go' >> ~/.zprofile
+echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.zprofile
+echo '' >> ~/.zprofile
+source ~/.zprofile
 
 brew install go
