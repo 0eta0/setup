@@ -14,7 +14,7 @@ xcode-select --install
 brew update
 
 # Update git
-brew install git
+brew install git tig
 
 # Install Python using pyenv
 echo '#### Install Python using pyenv ####'
