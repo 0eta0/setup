@@ -16,6 +16,9 @@ brew update
 # Update git
 brew install git tig
 
+# update git config
+cp ./.gitconfig ~/
+
 # Install Python using pyenv
 echo '#### Install Python using pyenv ####'
 echo '' >> ~/.zprofile
