@@ -1,6 +1,6 @@
 shell script for setup env.
 
-## Install environment
+## Installed environment
 - prezto
 - xcode
 - homebrew
@@ -10,3 +10,5 @@ shell script for setup env.
  - stable node version.
  - npm
 - go 
+- latest git
+- tig
