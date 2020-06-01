@@ -5,6 +5,7 @@
     sw = switch
     st = status
     cm = commit --verbose
+    fe = fetch --all --prune
     tags = tag -l
     br = branch
     df = diff --ignore-space-change
