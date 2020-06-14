@@ -1,6 +1,7 @@
-# Install zprezto
+# Install prezto
+
 setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/setup/zprezto/runcoms/^README.md(.N); do
+for rcfile in "${ZDOTDIR:-$HOME}"/setup/prezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
@@ -15,7 +16,7 @@ brew update
 brew install git tig
 
 # update git config
-ln -s ./.gitconfig ~/.gitconfig
+ln -s "${ZDOTDIR:-$HOME}"/setup/.gitconfig ~/.gitconfig
 
 # Install peco
 brew install peco
