@@ -1,12 +1,10 @@
 # Install zprezto
-mv zprezto ~/.zprezto
 setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+for rcfile in "${ZDOTDIR:-$HOME}"/setup/zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
 # Install xcode
-echo '#### Install xcode ####'
 xcode-select --install
 
 # Install homebrew
@@ -17,17 +15,12 @@ brew update
 brew install git tig
 
 # update git config
-cp ./.gitconfig ~/
+ln -s ./.gitconfig ~/.gitconfig
 
-# Install Python using pyenv
-echo '#### Install Python using pyenv ####'
-echo '' >> ~/.zprofile
-echo '# PYENV' >> ~/.zprofile
-echo 'export PYENV_ROOT=/usr/local/var/pyenv' >> ~/.zprofile
-echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.zprofile
-echo '' >> ~/.zprofile
-source ~/.zprofile
+# Install peco
+brew install peco
 
+# Install pyenv and latest Python
 brew install pyenv
 
 array=($(pyenv install --list | grep -E "^  2."))
@@ -48,24 +41,14 @@ pyenv install -v ${array[$num]}
 pyenv global ${array[$num]}
 
 # Install nodejs and npm using nodebrew
-echo '#### Install nodejs and npm using nodebrew ####'
-echo '' >> ~/.zprofile
-echo '# NODEBREW' >> ~/.zprofile
-echo 'export NODEBREW_ROOT=/usr/local/var/nodebrew' >> ~/.zprofile
-echo 'export PATH=$NODEBREW_ROOT/current/bin:$PATH' >> ~/.zprofile
-echo '' >> ~/.zprofile
-source ~/.zprofile
-
 curl -L git.io/nodebrew | perl - setup
 nodebrew install stable
 
 # Install go
-echo '#### Install go ####'
-echo '' >> ~/.zprofile
-echo '# GO' >> ~/.zprofile
-echo 'export GOPATH=$HOME/.go' >> ~/.zprofile
-echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> ~/.zprofile
-echo '' >> ~/.zprofile
-source ~/.zprofile
-
 brew install go
+
+# Install imagemagick
+brew install imagemagick
+
+source ~/.zprofile
+source ~/.zshrc

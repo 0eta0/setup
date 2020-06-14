@@ -10,5 +10,7 @@ shell script for setup env.
  - stable node version.
  - npm
 - go 
+- peco
 - latest git
 - tig
+- imagemagick
