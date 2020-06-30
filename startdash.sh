@@ -51,5 +51,8 @@ brew install go
 # Install imagemagick
 brew install imagemagick
 
+# Install ffmpeg
+brew install ffmpeg
+
 source ~/.zprofile
 source ~/.zshrc
