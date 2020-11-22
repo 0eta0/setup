@@ -56,5 +56,8 @@ brew install imagemagick
 # Install ffmpeg
 brew install ffmpeg
 
+# Install cargo
+curl https://sh.rustup.rs -sSf | sh
+
 source ~/.zprofile
 source ~/.zshrc
