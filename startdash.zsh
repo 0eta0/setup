@@ -14,18 +14,19 @@ ln -s $PWD/gitconfig ${HOME}/.gitconfig
 ln -s $PWD/gitignore ${HOME}/.gitignore
 
 # homebrew
-sh ./homebrew.sh
+# sh ./homebrew.sh
 
 # install anyenv
 if [ ! -e ~/.anyenv ]; then
-    git clone https://github.com/riywo/anyenv ~/.anyenv
+    git clone https://github.com/anyenv/anyenv ~/.anyenv
 
     export PATH="$HOME/.anyenv/bin:$PATH"
     eval "$(anyenv init -)"
-
+    
+    anyenv install --init
     anyenv install pyenv
     anyenv install rbenv
-    anyenv install ndenv
+    anyenv install nodenv
     anyenv install goenv
 fi
 

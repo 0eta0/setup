@@ -9,7 +9,6 @@ brews=(
     nkf
     tig
     wget
-    go
     ffmpeg
     cargo
     ghq
