@@ -1,16 +1,4 @@
 shell script for setup env.
 
-## Installed environment
-- prezto
-- xcode
-- homebrew
-- pyenv
- - latest python 2 and 3.
-- nodebrew
- - stable node version.
- - npm
-- go 
-- peco
-- latest git
-- tig
-- imagemagick
+## Just  
+`git clone https://github.com/0eta0/setup --recursive`
