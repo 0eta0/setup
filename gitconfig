@@ -30,3 +30,5 @@
     newMoved = 195 bold
 [commit]
     verbose = true
+[ghq]
+    root = ~/repo

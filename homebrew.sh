@@ -12,6 +12,7 @@ brews=(
     go
     ffmpeg
     cargo
+    ghq
 )
 
 casks=(
