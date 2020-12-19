@@ -22,10 +22,11 @@ if [ ! -e ~/.anyenv ]; then
 
     export PATH="$HOME/.anyenv/bin:$PATH"
     eval "$(anyenv init -)"
-    
+
+    git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+
     anyenv install --init
     anyenv install pyenv
-    anyenv install rbenv
     anyenv install nodenv
     anyenv install goenv
 fi
