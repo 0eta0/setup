@@ -3,15 +3,18 @@
 brews=(
     git
     peco
-    anyenv
     htop
     imagemagick
+    gpg
     nkf
     tig
     wget
     ffmpeg
     cargo
     ghq
+    coreutils
+    curl
+    asdf
 )
 
 casks=(
