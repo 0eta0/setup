@@ -8,6 +8,7 @@
     fe = fetch --all --prune
     p = pull --ff
     tags = tag -l
+    tag-prune = fetch origin --prune 'refs/tags/*:refs/tags/*'
     br = branch
     df = diff --ignore-space-change
     dfs = diff --staged --ignore-space-change
