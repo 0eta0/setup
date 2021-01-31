@@ -1,3 +1,5 @@
+[core]
+    excludesfile = $HOME/.gitignore
 [push]
     default = current
 [alias]
