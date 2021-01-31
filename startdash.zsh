@@ -13,6 +13,8 @@ done
 ln -s $PWD/gitconfig ${HOME}/.gitconfig
 ln -s $PWD/gitignore ${HOME}/.gitignore
 
+git config --global core.excludesfile ~/.gitignore
+
 # homebrew
 sh ./homebrew.sh
 
