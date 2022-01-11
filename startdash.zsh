@@ -41,6 +41,9 @@ asdf global ruby 2.7.2
 asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 asdf install rust 1.48.0 -y
 asdf global rust 1.48.0
+## flutter stable
+fvm install stable
+fvm global stable
 
 ## Source
 source ~/.zprofile

@@ -1,4 +1,8 @@
 .DS_Store
 .python-version
-*.xcodeproj/
 .tool-versions
+# Xcode
+project.xcworkspace
+xcuserdata/
+# flutter
+.fvm/flutter_sdk

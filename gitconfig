@@ -46,7 +46,7 @@
 [mergetool "vscode"]
     cmd = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' \"$MERGED\"
     trustExitCode = false
-[url "https://github.com/"]
-	insteadOf = git@github.com:
-[url "https://"]
-	insteadOf = git://
+#[url "https://github.com/"]
+#	insteadOf = git@github.com:
+#[url "https://"]
+#	insteadOf = git://

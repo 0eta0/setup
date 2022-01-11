@@ -15,6 +15,8 @@ brews=(
     coreutils
     curl
     asdf
+    dart
+    fvm
 )
 
 casks=(
