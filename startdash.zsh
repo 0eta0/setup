@@ -42,8 +42,8 @@ asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
 asdf install rust 1.48.0 -y
 asdf global rust 1.48.0
 ## flutter stable
-fvm install stable
-fvm global stable
+asdf install stable
+asdf global flutter 2.8.1-stable
 
 ## Source
 source ~/.zprofile
