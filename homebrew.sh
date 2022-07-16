@@ -17,6 +17,7 @@ brews=(
     asdf
     dart
     fvm
+    keith/formulae/reminders-cli
 )
 
 casks=(

@@ -25,6 +25,7 @@
     su = submodule update
     push-f = push --force-with-lease
     br-prune = "!f() { git branch --merged develop | grep -vE '(develop|master|main)$' | xargs -I % git branch -d %; };f"
+    br-prune-main = "!f() { git branch --merged main | grep -vE '(develop|master|main)$' | xargs -I % git branch -d %; };f"
 [mergetool]
     keepBackup = false
 [interactive]

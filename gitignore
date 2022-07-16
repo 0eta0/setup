@@ -4,5 +4,6 @@
 # Xcode
 project.xcworkspace
 xcuserdata/
+xcshareddata/
 # flutter
 .fvm/flutter_sdk
