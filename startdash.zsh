@@ -22,8 +22,8 @@ sh ./homebrew.sh
 ## nodejs
 zsh -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf install nodejs 15.4.0
-asdf global nodejs 15.4.0
+asdf install nodejs 16.9.0
+asdf global nodejs 16.9.0
 ## python
 asdf plugin-add python
 asdf install python 3.9.1
@@ -35,16 +35,16 @@ asdf install golang 1.15.6
 asdf global golang 1.15.6
 ## ruby
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf install ruby 2.7.2
-asdf global ruby 2.7.2
+asdf install ruby 3.0.3
+asdf global ruby 3.0.3
 ## rust
 asdf plugin-add rust https://github.com/code-lever/asdf-rust.git
-asdf install rust 1.48.0 -y
-asdf global rust 1.48.0
+asdf install rust 1.62 -y
+asdf global rust 1.62.0
 ## flutter stable
 asdf plugin add flutter
-asdf install stable
-asdf global flutter 2.8.1-stable
+asdf install 3.3.0-stable
+asdf global flutter 3.3.0-stable
 
 ## Source
 source ~/.zprofile

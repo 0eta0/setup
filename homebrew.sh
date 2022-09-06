@@ -24,7 +24,6 @@ casks=(
     charles
     docker
     google-chrome
-    google-japanese-ime
     iterm2
     visual-studio-code
 )
