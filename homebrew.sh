@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 brews=(
     git
@@ -14,9 +14,8 @@ brews=(
     ghq
     coreutils
     curl
+    jq
     asdf
-    dart
-    fvm
     keith/formulae/reminders-cli
 )
 
@@ -29,8 +28,10 @@ casks=(
 )
 
 # Install Homebrew
-if ! command -v brew > /dev/null 2>&1 ; then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! type brew > /dev/null; then
+    echo "Install Homebrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # brew install

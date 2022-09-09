@@ -31,8 +31,8 @@ asdf install python 2.7.18
 asdf global python 3.9.1 2.7.18
 ## go
 asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
-asdf install golang 1.15.6
-asdf global golang 1.15.6
+asdf install golang 1.19.1
+asdf global golang 1.19.1
 ## ruby
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf install ruby 3.0.3
@@ -43,9 +43,9 @@ asdf install rust 1.62 -y
 asdf global rust 1.62.0
 ## flutter stable
 asdf plugin add flutter
-asdf install 3.3.0-stable
-asdf global flutter 3.3.0-stable
+asdf install flutter 3.3.1-stable
+asdf global flutter 3.3.1-stable
 
 ## Source
-source ~/.zprofile
-source ~/.zshrc
+source ${HOME}/.zprofile
+source ${HOME}/.zshrc
