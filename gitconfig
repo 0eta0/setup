@@ -51,3 +51,6 @@
 #	insteadOf = git@github.com:
 #[url "https://"]
 #	insteadOf = git://
+[user]
+    name = 0eta0
+    email = eta.develop@gmail.com
