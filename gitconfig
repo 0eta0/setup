@@ -55,3 +55,6 @@
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [http]
 	postBuffer = 4194304
+[user]
+    name = 0eta0
+    email = eta.develop@gmail.com
