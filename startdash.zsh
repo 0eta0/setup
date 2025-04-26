@@ -45,6 +45,10 @@ asdf global rust 1.62.0
 asdf plugin add flutter
 asdf install flutter 3.3.1-stable
 asdf global flutter 3.3.1-stable
+## terraform stable
+asdf plugin add terraform
+asdf install terraform 1.5.6
+asdf global terraform 1.5.6
 
 ## Source
 source ${HOME}/.zprofile
